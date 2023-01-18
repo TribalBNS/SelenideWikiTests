@@ -16,4 +16,5 @@ public class SelenideWikiTests {
         $(".wiki-rightbar").$(byText("SoftAssertions")).click();
         $("#user-content-3-using-junit5-extend-test-class").parent().shouldHave(text("JUnit5"));
     }
+
 }
