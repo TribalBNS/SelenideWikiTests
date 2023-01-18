@@ -12,8 +12,8 @@ public class SelenideWikiTests {
     public void selenideWikiSoftAssertionsSearchTest() {
         open("https://github.com/selenide/selenide");
         $("#wiki-tab").click();
-        $(".markdown-body").shouldHave(text("Soft assertions"));
-        $(byText("Soft assertions")).click();
+        $(".js-wiki-more-pages-link").click();
+        $(".wiki-rightbar").$(byText("SoftAssertions")).click();
         $("#user-content-3-using-junit5-extend-test-class").parent().shouldHave(text("JUnit5"));
     }
 }
